@@ -26,10 +26,10 @@ namespace Tugas2_20200140141_A
                 SqlCommand id3 = new SqlCommand("insert into Sales (Id_Sales, Nama_Sales, No_Telepon, Email) values ('097','Sheila', '082218819581', 'sheilalala@mail.com')", con);
                 id3.ExecuteNonQuery();
 
-                SqlCommand id4 = new SqlCommand("insert into Penyewaan_Tenant (Id_Sewa, Id_Penyewa, Id_Tenant, Tanggal_Mulai, Tanggal_Selesai, Total_Bayar, Jenis_Pembayaran) values ('0689','7271030606000001', '001', '2022-04-01', '23-03-31', 50000000, 'Non Tunai')", con);
+                SqlCommand id4 = new SqlCommand("insert into Penyewaan_Tenant (Id_Sewa, Id_Penyewa, Id_Tenant, Tanggal_Mulai, Tanggal_Selesai, Total_Bayar, Jenis_Pembayaran) values ('0689','7271030606000001', '001', '2022-04-01', '2023-03-31', 50000000, 'Non Tunai')", con);
                 id4.ExecuteNonQuery();
 
-                SqlCommand id5 = new SqlCommand("insert into Penawaran (Id_Penawaran, Id_Tenant, Id_Sales, Tanggal_Mulai, Tanggal_Penawaran, Total_Terima, Bonus_Sales, Deskripsi) values ('1674','001', '097', '2022-01-11', '23-03-24', 50000000, 2500000, 'Jarak waktu penawaran dan penerimaan 2 bulan. Mulai sewa Tenant dihitung mulai 01 April 2022 dan Selesai pada 31 Maret 2023')", con);
+                SqlCommand id5 = new SqlCommand("insert into Penawaran (Id_Penawaran, Id_Tenant, Id_Sales, Tanggal_Mulai, Tanggal_Penawaran, Total_Terima, Bonus_Sales, Deskripsi) values ('1674','001', '097', '2022-01-11', '2022-03-24', 50000000, 2500000, 'Jarak waktu penawaran dan penerimaan 2 bulan. Mulai sewa Tenant dihitung mulai 01 April 2022 dan Selesai pada 31 Maret 2023')", con);
                 id5.ExecuteNonQuery();
 
                 Console.WriteLine("Berhasil menambahkan data!");
