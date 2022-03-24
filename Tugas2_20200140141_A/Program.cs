@@ -16,6 +16,12 @@ namespace Tugas2_20200140141_A
             {
                 con = new SqlConnection("data source=LAPTOP-KINALAKA\\NURSAKINAH;database=TenantMall;Integrated Security = TRUE");
                 con.Open();
+
+                SqlCommand id1 = new SqlCommand ("insert into Penyewa (Id_Penyewa, Nama_Depan, Nama_Belakang, No_Telepon, Alamat, Email, Jenis_Kelamin) values ('7271030606000001','Abel', 'Khaizure', '085834470606', 'Jalan Neo No. 06, 'abelganteng@gmail.com','L')", con);
+                id1.ExecuteNonQuery();
+
+                Console.WriteLine("Berhasil menambahkan data!");
+                Console.ReadKey();
             } catch (Exception e)
             {
                 Console.WriteLine("Gagal menambahkan data. " + e);
