@@ -23,6 +23,9 @@ namespace Tugas2_20200140141_A
                 SqlCommand id2 = new SqlCommand("insert into Tenant (Id_Tenant, Jenis_Tenant, Harga_Sewa, Jenis_Sewa, Lantai) values ('001','Anchor', 50000000, 'Tahun', '2')", con);
                 id2.ExecuteNonQuery();
 
+                SqlCommand id3 = new SqlCommand("insert into Sales (Id_Sales, Nama_Sales, No_Telepon, Email) values ('097','Sheila', '082218819581', 'sheilalala@mail.com')", con);
+                id3.ExecuteNonQuery();
+
                 Console.WriteLine("Berhasil menambahkan data!");
                 Console.ReadKey();
             } catch (Exception e)
