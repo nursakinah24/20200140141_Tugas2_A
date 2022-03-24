@@ -9,6 +9,22 @@ namespace Tugas2_20200140141_A
 {
     class Program
     {
+        public void InsertData()
+        {
+            SqlConnection con = null;
+            try
+            {
+                con = new SqlConnection("data source=LAPTOP-KINALAKA\\NURSAKINAH;database=TenantMall;Integrated Security = TRUE");
+                con.Open();
+            } catch (Exception e)
+            {
+                Console.WriteLine("Gagal menambahkan data. " + e);
+                Console.ReadKey();
+            } finally
+            {
+                con.Close();
+            }
+        }
         static void Main(string[] args)
         {
         }
