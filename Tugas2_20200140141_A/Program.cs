@@ -45,6 +45,7 @@ namespace Tugas2_20200140141_A
         }
         static void Main(string[] args)
         {
+            new Program().InsertData();
         }
     }
 }
